@@ -5,3 +5,4 @@ set(CMAKE_C_STANDARD 11)
 
 add_executable(exercicio1 "Linguagem C/exercicio1/main.c")
 add_executable(exercicio2 "Linguagem C/exercicio2/main.c")
+add_executable(exercicio3 "Linguagem C/exercicio3/main.c")
