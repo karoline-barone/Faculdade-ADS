@@ -1,0 +1,33 @@
+body{
+    background-color: beige; /*definindo a cor de fundo*/
+    font:100% Verdana, Times New Roman, Sanserif; /*escolhendo fontes*/
+    margin:0; /*distância da margem do navegador*/
+    padding:0; /*distância com relação a margem*/
+}
+#moldura{
+    background-color:burlywood;
+    width:80%; /*largura da div*/
+    margin:0 auto; /*distribui automaticamente a margem*/
+}
+#topo{
+    padding:10px;
+    background-color:aquamarine;
+}
+#conteudo{
+    width:80%;
+    background-color:blue;
+    min-height: 400px; /*altura minima*/
+    float:left
+}
+#navegacao{
+    width:18%;
+    background-color:aqua;
+    float:left;
+    min-height: 400px;
+    padding-left: 20px;
+}
+#rodape{
+    clear:both; /*limpa as formatacoes anteriores*/
+    background-color: burlywood
+    padding: 10px;
+}

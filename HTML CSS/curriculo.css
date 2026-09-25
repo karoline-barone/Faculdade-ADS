@@ -1,0 +1,49 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #b5ebd9;
+    display: flex; /*alinhar e distribuir*/
+    justify-content: center; /*alinhamento de conteudo*/
+}
+.curriculo{ /*main*/
+    background-color: #ffffff;
+    padding: 40px;
+    margin: 40px 0;
+    max-width: 900px; /*largura maxima*/
+    width: 100%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1); /*definir cores (transparencia)*/
+    border-radius: 8px; /*arredondar borda*/
+}
+.header{ /*cabecalho*/
+    margin-bottom: 30px; /*margem inferior*/
+    border-bottom: 2px solid #c9d151;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between; /*empurrar para extremidade*/
+    align-items: flex-start;/*alinha no inicio*/
+}  
+.conteudo-header{
+    display:flex;
+    allign: flex-start;
+    width:100%;
+    position: relative; /*para a foto flutuante*/
+}
+.pessoal{
+    margin-right: 170px; /*espaço para foto*/
+}
+.foto{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; /*torna a foto redonda*/
+    object-fit: cover;
+    border: 3px solid #3498db;
+    position:absolute;
+    top: 0;
+    right: 0;
+    transform: translateY(-20px); /*ajusta a posicao para um efeito de destaque*/
+}
+.secao{
+    margin-bottom: 30px;
+}

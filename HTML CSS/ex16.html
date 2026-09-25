@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo Formulários</title>
+</head>
+<body>
+    <form method="post" action="#"> <!--cria um formulário-->
+        <!--get envia pela barra de endereço-->
+        <!--post envia pela memória ou destino-->
+        <!--action informa o destino-->
+        <h1>Exemplo de formulário</h1>
+        <lable>Nome:</lable> <!--rótulo de formulário-->
+        <input type="text" size="50" maxlength="50" placeholder="Digite seu nome">
+        <!--type="text" = tipo texto / size = tamanho da caixa de texto -->
+        <!--maxlength = tamanho max em caracteres -->
+        <!--value="João" = valor inicial -->
+        <!--placeholder = dica de preenchimento-->
+        <!--id="1" = identificador / disabled = desabilitado -->
+        <lable>Senha:</lable>
+        <input type="password"> <!--fica máscara ao digitar-->
+        <br> 
+        <lable>Sexo/Gênero:</lable>
+        <input type="radio" name="sexo">Feminino <!--opção-->
+        <input type="radio" name="sexo">Masculino
+        <input type="radio" name="sexo">LGBTQIA+BIN
+        <input type="radio" name="sexo">PAN
+        <input type="radio" name="sexo" checked>Ainda não sei
+        <!-- como todos tem o mesmo name, só é possível marcar uma opção-->
+        <!--checked deixa uma opção previamente marcada-->
+        <br>
+        <label>Escolha o seu curso:</label>
+        <select name="curso"> <!--seleciona opção na lista-->
+            <option>ADS</option>
+            <option>Gestão Empresarial</option>
+            <option>Engenharia Mecânica</option>
+            <option>Mecatrônica</option>
+            <option>Fabricação Mecânica</option>
+        </select>
+        <br>
+        <input type="checkbox" checked disabled>Sim, eu desejo receber Spams! 
+        <!--caixinha a ser selecionada-->
+        <br>
+        <lable>Comentários</lable>
+        <textarea placeholder="Digite suas reclamações"></textarea>
+        <hr>
+        <input type="reset" value="limpar"> <!--redefine, limpa o formulário para o estado inicial-->
+        <input type="submit" value="gravar"> <!--envia o formulário-->
+    </form>
+</body>
+</html>
