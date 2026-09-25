@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo11 - Javascript</title>
+</head>
+<body>
+    <script type="text/Javascript">
+        var idade = parseInt(prompt("Digite a idade do atleta: "))
+        switch(true){
+            case (idade < 7):
+                document.write("Infantil");
+                break;
+            case (idade >= 7 && idade < 11):
+                document.write("Juvenil A");
+                break;
+            case (idade >= 11 && idade < 18):
+                document.write("Juvenil B");
+                break;
+            case (idade >= 18):
+                document.write("Adulto")
+                break;
+        }
+    </script>
+</body>
+</html>

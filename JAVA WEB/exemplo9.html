@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo9 - Javascript</title>
+</head>
+<body>
+    <script type="text/Javascript">
+        //entrar com a, b e c e mostrar o maior deles
+        var a = parseInt(prompt("Digite o numero A: "));
+        var b = parseInt(prompt("Digite o numero B: "));
+        var c = parseInt(prompt("Digite o numero C: "));
+        if (a > b && a > c)alert("A é o maior");
+        if (b > a && b > c)alert("B é o maior");
+        if (c > a && c > b)alert("C é o maior");
+        if(a == b && a > c)alert("A e B são iguais e maiores que C");
+        if(a == c && a > b)alert("A e C são iguais e maiores que B");
+        if(b == c && b > a)alert("B e C são iguais e maiores que A");
+        if(a == b && b == c)alert("A, B e C são iguais");
+    </script>
+</body>
+</html>
