@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var seuNome = prompt("Digite seu nome: ");
+        document.write("Seu nome tem "+seuNome.length+" caracteres<br>"); //tamanho
+        document.write("Seu nome em maiúsculo: "+seuNome.toUpperCase()+"<br>");
+        document.write("Seu nome em minúsculo: "+seuNome.toLowerCase()+"<br>");
+        var texto="Olá amigos";
+        var modificado=texto.replace("amigos", "amigas"); //substitui
+        alert(modificado);
+        var num=123.6;
+        document.write(num.toFixed(3)+"<br>"); //numero de casas decimais desejado
+        document.write(num.toString()+"litros<br>"); //converte para string/literal
+        var valor=5.1234;
+        document.write(valor.toPrecision(2)+"<br>"); //N primeiros numeros nao considera casas decimais
+        document.write(valor.toPrecision(3)); //512
+        
+    </script>
+</body>
+</html>

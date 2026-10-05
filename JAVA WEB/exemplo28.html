@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passagem de valor</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function soma(a,b){ //a passagem é por valor a = 5 b = 4
+            // a = 3; //muda o valor de a
+            // b = 7; //muda o valor de b
+            var resultado = a + b;
+            alert("O resultado é: "+resultado);
+            return resultado;
+        }
+        var x = 5;
+        var y = 4;
+        document.write(soma(x,y));
+    </script>
+</body>
+</html>

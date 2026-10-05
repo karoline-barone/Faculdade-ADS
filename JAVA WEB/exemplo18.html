@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pré e pós incremento</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var a,b;
+        var c = a = b = 50; //a = 50, b = 50, c = 50
+        a = a+++b; // a leitura é sequencial, a = a++ + b a = 100
+        // pós incremento era para ficar 101, porém o a++ se perde na memória (bug)
+        alert("a = "+a+"b = "+b+"c = "+c); // a = 100 b=50 c=50
+        document.write("a = "+a); //a = 100
+    </script>
+</body>
+</html>
