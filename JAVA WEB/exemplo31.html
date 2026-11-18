@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteio de numeros aleatórios</title>
+</head>
+<body>
+    <img src="roleta_777.gif"><br>
+    <script type="text/javascript">
+        function sorteio(){
+            a=parseInt(Math.random()*10);
+            return a;
+        }
+        document.write("<font size=7><b>SETE DA SORTE!</b></font><br>");
+        var a=sorteio();
+        document.write("<font size=7>"+a+"</font>");
+         var b=sorteio();
+        document.write("<font size=7>"+b+"</font>");
+         var c=sorteio();
+        document.write("<font size=7>"+c+"</font>");
+
+        if (a==7&&b==7&&c==7)
+            document.write("<br><b><font size=7>GANHOU!!!</font></b>");
+        else
+            document.write("<br><b><font size=7>PERDEU MANE!!!<font></b>");
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculando o salário</title>
+</head>
+<style>
+    .conteudo{
+        width: 400px;
+        border:solid 1px blue;
+    }
+    label{
+        width: 150px;
+        display:inline-block;
+        text-align: right;
+        margin-right: 10px;
+    }
+</style>
+<body>
+    <div class="conteudo">
+        <h1 align="center">CALCULO DE SALÁRIO</h1>
+        <label>Entre com o valor da hora:</label>
+        <input type="text" id="hora"><br>
+        <label>Entre com a quantidade de horas:</label>
+        <input type="text" id="qtd"><br>
+        <p id="total"></p><br>
+        <center><button onclick="calcular()">CALCULAR</button></center>
+    </div>
+    <script type="text/javascript">
+        function calcular(){
+            var hora=document.getElementById("hora");
+            var qtd=document.getElementById("qtd");
+            var salario=parseFloat(hora.value)*parseFloat(qtd.value);
+            document.getElementById("total").innerHTML="Total a receber:"+salario.toFixed(2);
+        }
+    </script>
+</body>
+</html>

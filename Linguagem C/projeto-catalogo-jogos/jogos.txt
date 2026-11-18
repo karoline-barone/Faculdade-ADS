@@ -1,0 +1,25 @@
+101
+The Witcher 3
+CD Projekt Red
+139.90
+120
+102
+Hades
+Supergiant Games
+47.49
+85
+103
+Hollow Knight
+Team Cherry
+43.99
+45
+104
+Stardew Valley
+ConcernedApe
+24.99
+220
+105
+Baldur's Gate 3
+Larian Studios
+199.99
+95

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXERCICIO ESTACIONAMENTO</title>
+</head>
+<style>
+    .conteudo{
+        width:400px;
+        border:solid 1px blue;
+    }
+    label{
+        width:150px;
+        display:inline-block;/*fluir na linha*/
+        text-align: right;
+        margin-right: 10px;
+    }
+</style>
+<body>
+    <div class="conteudo">
+        <h1 align="center">ESTACIONAMENTO</h1>
+        <label>Veículo:</label>
+        <select id="veiculo" onchange="atualizavalor()"><!--onchange evento quando altera o veiculo-->
+            <option>--</option>
+            <option value="10">Passeio</option>
+            <option value="5">Moto</option>
+            <option value="15">Utilitário</option>
+        </select>
+        <br>
+        <label>Valor por hora:</label>
+        <input id="valor"name="valor" type="text" size="5">
+        <br>
+        <label>Qtd de horas:</label>
+        <input id="horas"name="horas" type="text" size="5">
+        <br>
+        <p id="total"></p>
+        <br>
+        <center><button onclick="calcular()">CALCULAR</button></center>
+        <!--onclick evento ao clicar-->
+    </div>
+    <script type="text/javascript">
+        function atualizavalor(){
+            var veiculo = document.getElementById("veiculo");
+            var inputValor = document.getElementById("valor");
+            // Coloca o valor da opção selecionada no campo de texto
+            inputValor.value = veiculo.value;
+        }
+        function calcular(){
+            var valor=document.getElementsByName("valor");//pegando o elemento pelo nome
+            var horas=document.getElementsByName("horas");
+            var total=parseFloat(valor[0].value)*parseFloat(horas[0].value);
+            document.getElementById("total").innerHTML="Total a pagar:"+total.toFixed(2);
+        }
+        atualizarvalor();//chama a função ao inicializar
+    </script>
+</body>
+</html>

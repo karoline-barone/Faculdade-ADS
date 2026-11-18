@@ -10,15 +10,15 @@
         var a = 10;
         var b = 12;
         var c = 14;
-        var valor1 = ++a - b;
-        var valor2 = b-- + a++;
-        var valor3 = a + c++;
-        document.write("a = "+a+"<br>");
-        document.write("b = "+b+"<br>");
-        document.write("c = "+c+"<br>");
-        document.write("valor1 = "+valor1+"<br>");
-        document.write("valor2 = "+valor2+"<br>");
-        document.write("valor3 = "+valor3);
+        var valor1 = ++a - b; //11 - 12 = -1
+        var valor2 = b-- + a++; //12 + 11 = 23, pós incremento a = 12, b = 11
+        var valor3 = a + c++; //12 + 14 = 26, pós incremento c = 15
+        document.write("a = "+a+"<br>"); // 12
+        document.write("b = "+b+"<br>"); // 11
+        document.write("c = "+c+"<br>"); // 15
+        document.write("valor1 = "+valor1+"<br>"); // -1
+        document.write("valor2 = "+valor2+"<br>"); // 23
+        document.write("valor3 = "+valor3); //26
     </script>
 </body>
 </html>
